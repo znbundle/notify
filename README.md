@@ -1,2 +1,7 @@
-# notify
-Уведомления (Flash, SMS, Email)
+# Уведомления (Flash, SMS, Email)
+
+## Введение
+
+## Оглавление
+
+* [Документация](./docs/README.md)
