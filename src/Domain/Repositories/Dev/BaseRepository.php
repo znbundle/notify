@@ -8,7 +8,7 @@ use PhpLab\Core\Libs\Store\StoreFile;
 abstract class BaseRepository
 {
 
-    const DIRECTORY = null;
+    //const DIRECTORY = null;
 
     protected $directory;
 
@@ -19,7 +19,8 @@ abstract class BaseRepository
         if ($this->directory) {
             return $this->directory;
         }
-        return static::DIRECTORY;
+        $this->directory = __DIR__ . '/../../../../../../../' . $_ENV['NOTIFY_DEV_DIR'];
+        return $this->directory;
     }
 
     public function __construct(string $directory = null)
