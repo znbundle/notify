@@ -8,7 +8,10 @@ use PhpBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 class EmailRepository extends BaseRepository implements EmailRepositoryInterface
 {
 
-    //const DIRECTORY = __DIR__ . '/../../../../../../../../var/data/notify/email';
+    protected function directory(): string
+    {
+        return parent::directory() . '/email';
+    }
 
     public function send(EmailEntity $emailEntity)
     {

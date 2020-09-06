@@ -8,7 +8,10 @@ use PhpBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
 class SmsRepository extends BaseRepository implements SmsRepositoryInterface
 {
 
-    //const DIRECTORY = __DIR__ . '/../../../../../../../../var/data/notify/sms';
+    protected function directory(): string
+    {
+        return parent::directory() . '/sms';
+    }
 
     public function send(SmsEntity $smsEntity)
     {

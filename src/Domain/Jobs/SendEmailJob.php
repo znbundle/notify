@@ -5,16 +5,20 @@ namespace PhpBundle\Notify\Domain\Jobs;
 use PhpBundle\Notify\Domain\Entities\EmailEntity;
 use PhpBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 use PhpBundle\Queue\Domain\Interfaces\JobInterface;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
-use Symfony\Component\DependencyInjection\ContainerAwareTrait;
+use Psr\Container\ContainerInterface;
 
-class SendEmailJob implements JobInterface, ContainerAwareInterface
+class SendEmailJob implements JobInterface
 {
-
-    use ContainerAwareTrait;
 
     /** @var EmailEntity */
     public $entity;
+
+    private $container;
+
+    public function __construct(ContainerInterface $container)
+    {
+        $this->container = $container;
+    }
 
     public function run()
     {
@@ -22,5 +26,4 @@ class SendEmailJob implements JobInterface, ContainerAwareInterface
         $emailRepository = $this->container->get(EmailRepositoryInterface::class);
         $emailRepository->send($this->entity);
     }
-
 }
