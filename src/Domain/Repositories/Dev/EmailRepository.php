@@ -15,7 +15,11 @@ class EmailRepository extends BaseRepository implements EmailRepositoryInterface
 
     public function send(EmailEntity $emailEntity)
     {
-        $this->saveToFile($emailEntity);
+        $this->saveToFile([
+            'address' => $emailEntity->getTo(),
+            'subject' => $emailEntity->getSubject(),
+            'message' => $emailEntity->getBody(),
+        ]);
     }
 
 }

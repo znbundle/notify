@@ -15,7 +15,10 @@ class SmsRepository extends BaseRepository implements SmsRepositoryInterface
 
     public function send(SmsEntity $smsEntity)
     {
-        $this->saveToFile($smsEntity);
+        $this->saveToFile([
+            'address' => $smsEntity->getPhone(),
+            'message' => $smsEntity->getMessage(),
+        ]);
     }
 
 }

@@ -28,7 +28,7 @@ abstract class BaseRepository
         $this->directory = $directory;
     }
 
-    protected function saveToFile(object $emailEntity)
+    protected function saveToFile(array $emailEntity)
     {
         $fileName = $this->getFileName();
         $data = EntityHelper::toArray($emailEntity);
