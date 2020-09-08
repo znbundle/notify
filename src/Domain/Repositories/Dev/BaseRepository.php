@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Repositories\Dev;
+namespace ZnBundle\Notify\Domain\Repositories\Dev;
 
-use PhpBundle\Notify\Domain\Entities\TestEntity;
-use PhpLab\Core\Domain\Helpers\EntityHelper;
-use PhpLab\Core\Libs\Store\StoreFile;
+use ZnBundle\Notify\Domain\Entities\TestEntity;
+use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Base\Libs\Store\StoreFile;
 
 abstract class BaseRepository
 {

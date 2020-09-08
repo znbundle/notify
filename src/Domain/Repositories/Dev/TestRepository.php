@@ -1,15 +1,15 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Repositories\Dev;
+namespace ZnBundle\Notify\Domain\Repositories\Dev;
 
 use Illuminate\Support\Collection;
-use PhpBundle\Notify\Domain\Entities\TestEntity;
-use PhpBundle\Notify\Domain\Interfaces\Repositories\TestRepositoryInterface;
-use PhpLab\Core\Domain\Helpers\EntityHelper;
-use PhpLab\Core\Domain\Interfaces\Entity\EntityIdInterface;
-use PhpLab\Core\Domain\Libs\Query;
-use PhpLab\Core\Helpers\TimeHelper;
-use PhpLab\Core\Libs\Store\StoreFile;
+use ZnBundle\Notify\Domain\Entities\TestEntity;
+use ZnBundle\Notify\Domain\Interfaces\Repositories\TestRepositoryInterface;
+use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Base\Domain\Interfaces\Entity\EntityIdInterface;
+use ZnCore\Base\Domain\Libs\Query;
+use ZnCore\Base\Helpers\TimeHelper;
+use ZnCore\Base\Libs\Store\StoreFile;
 
 class TestRepository extends BaseRepository implements TestRepositoryInterface
 {

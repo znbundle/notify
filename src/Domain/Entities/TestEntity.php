@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Entities;
+namespace ZnBundle\Notify\Domain\Entities;
 
-use PhpLab\Core\Domain\Interfaces\Entity\EntityIdInterface;
+use ZnCore\Base\Domain\Interfaces\Entity\EntityIdInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-use PhpLab\Core\Domain\Interfaces\Entity\ValidateEntityInterface;
+use ZnCore\Base\Domain\Interfaces\Entity\ValidateEntityInterface;
 use DateTime;
 
 class TestEntity implements ValidateEntityInterface, EntityIdInterface

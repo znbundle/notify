@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Repositories\Swift;
+namespace ZnBundle\Notify\Domain\Repositories\Swift;
 
-use PhpBundle\Notify\Domain\Entities\EmailEntity;
-use PhpBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
+use ZnBundle\Notify\Domain\Entities\EmailEntity;
+use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 
 class EmailRepository implements EmailRepositoryInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Enums;
+namespace ZnBundle\Notify\Domain\Enums;
 
-use PhpLab\Core\Domain\Base\BaseEnum;
+use ZnCore\Base\Domain\Base\BaseEnum;
 
 class NotifyPermissionEnum extends BaseEnum
 {

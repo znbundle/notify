@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Notify\Symfony;
+namespace ZnBundle\Notify\Symfony;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

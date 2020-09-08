@@ -1,14 +1,14 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Services;
+namespace ZnBundle\Notify\Domain\Services;
 
-use PhpBundle\Notify\Domain\Entities\SmsEntity;
-use PhpBundle\Notify\Domain\Enums\ChannelEnum;
-use PhpBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
-use PhpBundle\Notify\Domain\Interfaces\Services\SmsServiceInterface;
-use PhpBundle\Notify\Domain\Jobs\SendSmsJob;
-use PhpBundle\Queue\Domain\Enums\PriorityEnum;
-use PhpBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
+use ZnBundle\Notify\Domain\Entities\SmsEntity;
+use ZnBundle\Notify\Domain\Enums\ChannelEnum;
+use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
+use ZnBundle\Notify\Domain\Interfaces\Services\SmsServiceInterface;
+use ZnBundle\Notify\Domain\Jobs\SendSmsJob;
+use ZnBundle\Queue\Domain\Enums\PriorityEnum;
+use ZnBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
 use Psr\Container\ContainerInterface;
 
 class SmsService implements SmsServiceInterface

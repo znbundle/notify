@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Interfaces\Repositories;
+namespace ZnBundle\Notify\Domain\Interfaces\Repositories;
 
-use PhpBundle\Notify\Domain\Entities\EmailEntity;
+use ZnBundle\Notify\Domain\Entities\EmailEntity;
 
 interface EmailRepositoryInterface
 {

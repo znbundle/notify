@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Repositories\Dev;
+namespace ZnBundle\Notify\Domain\Repositories\Dev;
 
-use PhpBundle\Notify\Domain\Entities\SmsEntity;
-use PhpBundle\Notify\Domain\Entities\TestEntity;
-use PhpBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
+use ZnBundle\Notify\Domain\Entities\SmsEntity;
+use ZnBundle\Notify\Domain\Entities\TestEntity;
+use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
 
 class SmsRepository extends TestRepository implements SmsRepositoryInterface
 {

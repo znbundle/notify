@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Repositories\Session;
+namespace ZnBundle\Notify\Domain\Repositories\Session;
 
 use LogicException;
-use PhpLab\Core\Traits\InjectContainerTrait;
-use PhpBundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;
+use ZnCore\Base\Traits\InjectContainerTrait;
+use ZnBundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 

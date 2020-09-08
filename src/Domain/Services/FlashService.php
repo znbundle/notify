@@ -1,11 +1,11 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Services;
+namespace ZnBundle\Notify\Domain\Services;
 
-use PhpLab\Core\Domain\Base\BaseService;
-use PhpBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
-use PhpBundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;
-use PhpBundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;
+use ZnCore\Base\Domain\Base\BaseService;
+use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
+use ZnBundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;
+use ZnBundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;
 
 class FlashService extends BaseService implements FlashServiceInterface
 {

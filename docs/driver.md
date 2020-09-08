@@ -24,8 +24,8 @@
 
 ```yaml
 services:
-    PhpBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface:
-        class: PhpBundle\Notify\Domain\Repositories\Dev\EmailRepository
+    ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface:
+        class: ZnBundle\Notify\Domain\Repositories\Dev\EmailRepository
         public: true
 ```
 

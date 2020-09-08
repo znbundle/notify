@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Repositories\Smsc;
+namespace ZnBundle\Notify\Domain\Repositories\Smsc;
 
-use PhpBundle\Notify\Domain\Entities\SmsEntity;
-use PhpBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
+use ZnBundle\Notify\Domain\Entities\SmsEntity;
+use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
 
 class SmsRepository implements SmsRepositoryInterface
 {

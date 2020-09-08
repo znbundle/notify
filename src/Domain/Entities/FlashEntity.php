@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Entities;
+namespace ZnBundle\Notify\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
-use PhpLab\Core\Domain\Interfaces\Entity\ValidateEntityInterface;
+use ZnCore\Base\Domain\Interfaces\Entity\ValidateEntityInterface;
 
 class FlashEntity implements ValidateEntityInterface
 {

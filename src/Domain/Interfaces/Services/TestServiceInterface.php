@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Interfaces\Services;
+namespace ZnBundle\Notify\Domain\Interfaces\Services;
 
-use PhpLab\Core\Domain\Interfaces\Service\CrudServiceInterface;
+use ZnCore\Base\Domain\Interfaces\Service\CrudServiceInterface;
 
 interface TestServiceInterface extends CrudServiceInterface
 {

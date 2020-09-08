@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Enums;
+namespace ZnBundle\Notify\Domain\Enums;
 
 class ChannelEnum
 {

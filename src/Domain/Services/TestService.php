@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Services;
+namespace ZnBundle\Notify\Domain\Services;
 
-use PhpBundle\Notify\Domain\Interfaces\Services\TestServiceInterface;
-use PhpBundle\Notify\Domain\Interfaces\Repositories\TestRepositoryInterface;
-use PhpLab\Core\Domain\Base\BaseCrudService;
+use ZnBundle\Notify\Domain\Interfaces\Services\TestServiceInterface;
+use ZnBundle\Notify\Domain\Interfaces\Repositories\TestRepositoryInterface;
+use ZnCore\Base\Domain\Base\BaseCrudService;
 
 class TestService extends BaseCrudService implements TestServiceInterface
 {

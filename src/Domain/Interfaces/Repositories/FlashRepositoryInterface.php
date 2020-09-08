@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Interfaces\Repositories;
+namespace ZnBundle\Notify\Domain\Interfaces\Repositories;
 
 interface FlashRepositoryInterface
 {

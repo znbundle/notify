@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Jobs;
+namespace ZnBundle\Notify\Domain\Jobs;
 
-use PhpBundle\Notify\Domain\Entities\SmsEntity;
-use PhpBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
-use PhpBundle\Queue\Domain\Interfaces\JobInterface;
+use ZnBundle\Notify\Domain\Entities\SmsEntity;
+use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
+use ZnBundle\Queue\Domain\Interfaces\JobInterface;
 use Psr\Container\ContainerInterface;
 
 class SendSmsJob implements JobInterface

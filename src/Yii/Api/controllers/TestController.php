@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpBundle\Notify\Yii\Api\controllers;
+namespace ZnBundle\Notify\Yii\Api\controllers;
 
-use PhpBundle\Notify\Domain\Enums\NotifyPermissionEnum;
-use PhpBundle\Notify\Domain\Services\TestService;
+use ZnBundle\Notify\Domain\Enums\NotifyPermissionEnum;
+use ZnBundle\Notify\Domain\Services\TestService;
 use yii\base\Module;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;

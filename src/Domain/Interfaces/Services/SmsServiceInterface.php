@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Interfaces\Services;
+namespace ZnBundle\Notify\Domain\Interfaces\Services;
 
-use PhpBundle\Notify\Domain\Entities\SmsEntity;
-use PhpBundle\Queue\Domain\Enums\PriorityEnum;
+use ZnBundle\Notify\Domain\Entities\SmsEntity;
+use ZnBundle\Queue\Domain\Enums\PriorityEnum;
 
 interface SmsServiceInterface
 {

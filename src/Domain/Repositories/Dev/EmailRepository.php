@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Repositories\Dev;
+namespace ZnBundle\Notify\Domain\Repositories\Dev;
 
-use PhpBundle\Notify\Domain\Entities\EmailEntity;
-use PhpBundle\Notify\Domain\Entities\TestEntity;
-use PhpBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
+use ZnBundle\Notify\Domain\Entities\EmailEntity;
+use ZnBundle\Notify\Domain\Entities\TestEntity;
+use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 
 class EmailRepository extends TestRepository implements EmailRepositoryInterface
 {

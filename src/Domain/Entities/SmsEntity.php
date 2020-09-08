@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Entities;
+namespace ZnBundle\Notify\Domain\Entities;
 
 class SmsEntity
 {

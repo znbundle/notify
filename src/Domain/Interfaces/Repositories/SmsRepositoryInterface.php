@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Interfaces\Repositories;
+namespace ZnBundle\Notify\Domain\Interfaces\Repositories;
 
-use PhpBundle\Notify\Domain\Entities\SmsEntity;
+use ZnBundle\Notify\Domain\Entities\SmsEntity;
 
 interface SmsRepositoryInterface
 {

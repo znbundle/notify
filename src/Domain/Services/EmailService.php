@@ -1,14 +1,14 @@
 <?php
 
-namespace PhpBundle\Notify\Domain\Services;
+namespace ZnBundle\Notify\Domain\Services;
 
-use PhpBundle\Notify\Domain\Entities\EmailEntity;
-use PhpBundle\Notify\Domain\Enums\ChannelEnum;
-use PhpBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use PhpBundle\Notify\Domain\Interfaces\Services\EmailServiceInterface;
-use PhpBundle\Notify\Domain\Jobs\SendEmailJob;
-use PhpBundle\Queue\Domain\Enums\PriorityEnum;
-use PhpBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
+use ZnBundle\Notify\Domain\Entities\EmailEntity;
+use ZnBundle\Notify\Domain\Enums\ChannelEnum;
+use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
+use ZnBundle\Notify\Domain\Interfaces\Services\EmailServiceInterface;
+use ZnBundle\Notify\Domain\Jobs\SendEmailJob;
+use ZnBundle\Queue\Domain\Enums\PriorityEnum;
+use ZnBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
 
 class EmailService implements EmailServiceInterface
 {
