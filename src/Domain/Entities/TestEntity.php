@@ -2,17 +2,25 @@
 
 namespace PhpBundle\Notify\Domain\Entities;
 
+use PhpLab\Core\Domain\Interfaces\Entity\EntityIdInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use PhpLab\Core\Domain\Interfaces\Entity\ValidateEntityInterface;
+use DateTime;
 
-class TestEntity implements ValidateEntityInterface
+class TestEntity implements ValidateEntityInterface, EntityIdInterface
 {
 
+    private $id;
     private $address = null;
     private $subject = null;
     private $message = null;
     private $type = null;
     private $createdAt = null;
+
+    public function __construct()
+    {
+        $this->setCreatedAt(new DateTime);
+    }
 
     public function validationRules()
     {
@@ -27,6 +35,16 @@ class TestEntity implements ValidateEntityInterface
                 new Assert\NotBlank,
             ],
         ];
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id): void
+    {
+        $this->id = $id;
     }
 
     public function setAddress($value) : void
@@ -69,12 +87,12 @@ class TestEntity implements ValidateEntityInterface
         $this->type = $type;
     }
 
-    public function setCreatedAt($value) : void
+    public function setCreatedAt(DateTime $value) : void
     {
         $this->createdAt = $value;
     }
 
-    public function getCreatedAt()
+    public function getCreatedAt(): DateTime
     {
         return $this->createdAt;
     }

@@ -3,22 +3,24 @@
 namespace PhpBundle\Notify\Domain\Repositories\Dev;
 
 use PhpBundle\Notify\Domain\Entities\SmsEntity;
+use PhpBundle\Notify\Domain\Entities\TestEntity;
 use PhpBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
 
-class SmsRepository extends BaseRepository implements SmsRepositoryInterface
+class SmsRepository extends TestRepository implements SmsRepositoryInterface
 {
 
-    protected function directory(): string
+    /*protected function directory(): string
     {
         return parent::directory() . '/sms';
-    }
+    }*/
 
     public function send(SmsEntity $smsEntity)
     {
-        $this->saveToFile([
-            'address' => $smsEntity->getPhone(),
-            'message' => $smsEntity->getMessage(),
-        ]);
+        $testEntity = new TestEntity;
+        $testEntity->setType('sms');
+        $testEntity->setAddress($smsEntity->getPhone());
+        $testEntity->setMessage($smsEntity->getMessage());
+        $this->create($testEntity);
     }
 
 }
