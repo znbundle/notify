@@ -15,7 +15,9 @@
 	"autoload": {
 		"psr-4": {
 			"PhpBundle\\Notify\\": "src",
-			"PhpBundle\\Notify\\Tests\\": "tests"
+			"PhpBundle\\Notify\\Tests\\": "tests",
+			"ZnBundle\\Notify\\": "src",
+			"ZnBundle\\Notify\\Tests\\": "tests"
 		}
 	}
 }
