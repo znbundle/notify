@@ -3,15 +3,15 @@
 namespace ZnBundle\Notify\Domain\Repositories\Session;
 
 use LogicException;
-use ZnCore\Base\Traits\InjectContainerTrait;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use ZnCore\Base\Libs\Container\ContainerAwareTrait;
 
 class FlashRepository implements FlashRepositoryInterface
 {
 
-    use InjectContainerTrait;
+    use ContainerAwareTrait;
 
     public function add(string $type, string $message)
     {

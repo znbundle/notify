@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Notify\Domain\Services;
 
-use ZnCore\Base\Domain\Base\BaseService;
+use ZnCore\Domain\Base\BaseService;
 use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;
 use ZnBundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;

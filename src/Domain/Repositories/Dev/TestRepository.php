@@ -5,9 +5,9 @@ namespace ZnBundle\Notify\Domain\Repositories\Dev;
 use Illuminate\Support\Collection;
 use ZnBundle\Notify\Domain\Entities\TestEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\TestRepositoryInterface;
-use ZnCore\Base\Domain\Helpers\EntityHelper;
-use ZnCore\Base\Domain\Interfaces\Entity\EntityIdInterface;
-use ZnCore\Base\Domain\Libs\Query;
+use ZnCore\Domain\Helpers\EntityHelper;
+use ZnCore\Domain\Interfaces\Entity\EntityIdInterface;
+use ZnCore\Domain\Libs\Query;
 use ZnCore\Base\Helpers\TimeHelper;
 use ZnCore\Base\Libs\Store\StoreFile;
 

@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Notify\Domain\Enums;
 
-use ZnCore\Base\Domain\Base\BaseEnum;
+use ZnCore\Domain\Base\BaseEnum;
 
 class NotifyPermissionEnum extends BaseEnum
 {

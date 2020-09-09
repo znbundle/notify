@@ -3,7 +3,7 @@
 namespace ZnBundle\Notify\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
-use ZnCore\Base\Domain\Interfaces\Entity\ValidateEntityInterface;
+use ZnCore\Domain\Interfaces\Entity\ValidateEntityInterface;
 
 class FlashEntity implements ValidateEntityInterface
 {
