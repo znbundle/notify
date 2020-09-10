@@ -7,7 +7,7 @@ use ZnBundle\Notify\Domain\Services\TestService;
 use yii\base\Module;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
-use RocketLab\Bundle\Rest\Base\BaseCrudController;
+use ZnLib\Rest\Yii2\Base\BaseCrudController;
 
 class TestController extends BaseCrudController
 {
