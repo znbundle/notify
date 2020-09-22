@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Notify\Yii\Api;
+namespace ZnBundle\Notify\Yii2\Api;
 
 use yii\base\Module as YiiModule;
 

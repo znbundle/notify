@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Notify\Yii\Api\controllers;
+namespace ZnBundle\Notify\Yii2\Api\controllers;
 
 use ZnBundle\Notify\Domain\Enums\NotifyPermissionEnum;
 use ZnBundle\Notify\Domain\Services\TestService;
