@@ -2,7 +2,9 @@
 
 namespace ZnBundle\Notify\Domain\Enums;
 
-class NotifyPermissionEnum
+use ZnCore\Base\Interfaces\GetLabelsInterface;
+
+class NotifyPermissionEnum implements GetLabelsInterface
 {
 
     const TEST_READ = 'oNotifyTestRead';
