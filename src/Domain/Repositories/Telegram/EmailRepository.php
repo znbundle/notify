@@ -4,7 +4,7 @@ namespace ZnBundle\Notify\Domain\Repositories\Telegram;
 
 use ZnBundle\Notify\Domain\Entities\EmailEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use ZnTool\Dev\Dumper\Domain\Facades\Bot;
+use ZnLib\Telegram\Domain\Facades\Bot;
 
 class EmailRepository implements EmailRepositoryInterface
 {
