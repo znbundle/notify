@@ -2,12 +2,13 @@
 
 namespace ZnBundle\Notify\Domain\Entities;
 
+use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Domain\Interfaces\Entity\EntityIdInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-use ZnCore\Domain\Interfaces\Entity\ValidateEntityInterface;
+use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 use DateTime;
 
-class TestEntity implements ValidateEntityInterface, EntityIdInterface
+class TestEntity implements ValidateEntityByMetadataInterface, EntityIdInterface
 {
 
     private $id;
@@ -22,19 +23,11 @@ class TestEntity implements ValidateEntityInterface, EntityIdInterface
         $this->setCreatedAt(new DateTime);
     }
 
-    public function validationRules()
+    public static function loadValidatorMetadata(ClassMetadata $metadata)
     {
-        return [
-            'address' => [
-                new Assert\NotBlank,
-            ],
-            'message' => [
-                new Assert\NotBlank,
-            ],
-            'createdAt' => [
-                new Assert\NotBlank,
-            ],
-        ];
+        $metadata->addPropertyConstraint('address', new Assert\NotBlank);
+        $metadata->addPropertyConstraint('message', new Assert\NotBlank);
+        $metadata->addPropertyConstraint('createdAt', new Assert\NotBlank);
     }
 
     public function getId()

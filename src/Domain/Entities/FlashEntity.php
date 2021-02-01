@@ -3,18 +3,19 @@
 namespace ZnBundle\Notify\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
-use ZnCore\Domain\Interfaces\Entity\ValidateEntityInterface;
+use Symfony\Component\Validator\Mapping\ClassMetadata;
+use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 
-class FlashEntity implements ValidateEntityInterface
+class FlashEntity implements ValidateEntityByMetadataInterface
 {
 
     private $type = null;
 
     private $message = null;
 
-    public function validationRules()
+    public static function loadValidatorMetadata(ClassMetadata $metadata)
     {
-        return [];
+
     }
 
     public function setType($value)
@@ -37,6 +38,4 @@ class FlashEntity implements ValidateEntityInterface
         return $this->message;
     }
 
-
 }
-
