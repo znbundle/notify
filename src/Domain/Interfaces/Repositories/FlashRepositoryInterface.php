@@ -11,7 +11,7 @@ interface FlashRepositoryInterface
      * @param string $type
      * @param mixed  $message
      */
-    public function add(string $type, string $message);
+    public function add(string $type, string $message, int $delay);
 
     /**
      * Registers one or more messages for a given type.

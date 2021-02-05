@@ -13,7 +13,7 @@ class FlashRepository implements FlashRepositoryInterface
 
     use ContainerAwareTrait;
 
-    public function add(string $type, string $message)
+    public function add(string $type, string $message, int $delay)
     {
         $this->getSession()->getFlashBag()->add($type, $message);
     }
