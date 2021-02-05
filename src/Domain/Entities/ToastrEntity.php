@@ -12,9 +12,9 @@ use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 class ToastrEntity implements ValidateEntityByMetadataInterface
 {
 
-    private $type = '';
-    private $content = '';
-    private $delay = 5000;
+    private $type;
+    private $content;
+    private $delay;
 
     public static function loadValidatorMetadata(ClassMetadata $metadata)
     {
@@ -56,5 +56,4 @@ class ToastrEntity implements ValidateEntityByMetadataInterface
     {
         $this->delay = $delay;
     }
-
 }
