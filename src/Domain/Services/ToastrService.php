@@ -22,27 +22,27 @@ class ToastrService extends BaseService implements ToastrServiceInterface
         $this->repository = $repository;
     }
 
-    public function success(string $message, int $delay = null)
+    public function success($message, int $delay = null)
     {
         $this->add(FlashMessageTypeEnum::SUCCESS, $message, $delay);
     }
 
-    public function info(string $message, int $delay = null)
+    public function info($message, int $delay = null)
     {
         $this->add(FlashMessageTypeEnum::INFO, $message, $delay);
     }
 
-    public function warning(string $message, int $delay = null)
+    public function warning($message, int $delay = null)
     {
         $this->add(FlashMessageTypeEnum::WARNING, $message, $delay);
     }
 
-    public function error(string $message, int $delay = null)
+    public function error($message, int $delay = null)
     {
         $this->add(FlashMessageTypeEnum::ERROR, $message, $delay);
     }
 
-    public function add(string $type, string $message, int $delay = null)
+    public function add(string $type, $message, int $delay = null)
     {
         if($delay == null) {
             $delay = self::DEFAULT_DELAY;

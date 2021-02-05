@@ -8,15 +8,15 @@ use ZnBundle\Notify\Domain\Entities\ToastrEntity;
 interface ToastrServiceInterface
 {
 
-    public function success(string $message, int $delay = null);
+    public function success($message, int $delay = null);
 
-    public function info(string $message, int $delay = null);
+    public function info($message, int $delay = null);
 
-    public function warning(string $message, int $delay = null);
+    public function warning($message, int $delay = null);
 
-    public function error(string $message, int $delay = null);
+    public function error($message, int $delay = null);
 
-    public function add(string $type, string $messageint, int $delay = null);
+    public function add(string $type, $message, int $delay = null);
 
     /**
      * @return Collection | ToastrEntity[]
