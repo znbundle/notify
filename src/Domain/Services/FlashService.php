@@ -14,7 +14,7 @@ class FlashService extends BaseService implements FlashServiceInterface
 
     public function __construct(FlashRepositoryInterface $repository)
     {
-        $this->repository = $repository;
+        $this->setRepository($repository);
     }
 
     public function addSuccess(string $message, int $delay = self::DEFAULT_DELAY)
@@ -39,6 +39,6 @@ class FlashService extends BaseService implements FlashServiceInterface
 
     public function add(string $type, string $message, int $delay = self::DEFAULT_DELAY)
     {
-        $this->repository->add($type, $message, $delay);
+        $this->getRepository()->add($type, $message, $delay);
     }
 }

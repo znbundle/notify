@@ -19,7 +19,7 @@ class ToastrService extends BaseService implements ToastrServiceInterface
 
     public function __construct(ToastrRepositoryInterface $repository)
     {
-        $this->repository = $repository;
+        $this->setRepository($repository);
     }
 
     public function success($message, int $delay = null)
@@ -54,10 +54,10 @@ class ToastrService extends BaseService implements ToastrServiceInterface
         $toastrEntity->setType($type);
         $toastrEntity->setContent($message);
         $toastrEntity->setDelay($delay);
-        $this->repository->create($toastrEntity);
+        $this->getRepository()->create($toastrEntity);
     }
 
     public function all(): Collection {
-        return $this->repository->all();
+        return $this->getRepository()->all();
     }
 }

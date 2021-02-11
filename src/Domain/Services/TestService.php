@@ -11,7 +11,7 @@ class TestService extends BaseCrudService implements TestServiceInterface
 
     public function __construct(TestRepositoryInterface $repository)
     {
-        $this->repository = $repository;
+        $this->setRepository($repository);
     }
     
 }
