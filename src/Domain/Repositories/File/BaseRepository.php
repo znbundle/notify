@@ -2,13 +2,10 @@
 
 namespace ZnBundle\Notify\Domain\Repositories\File;
 
-use ZnBundle\Notify\Domain\Entities\EmailEntity;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 use ZnCore\Domain\Base\Repositories\BaseFileCrudRepository;
 use ZnCore\Domain\Helpers\EntityHelper;
 
-abstract class BaseRepository extends BaseFileCrudRepository implements EmailRepositoryInterface
+abstract class BaseRepository extends BaseFileCrudRepository
 {
 
     public $limitItems = 3;
