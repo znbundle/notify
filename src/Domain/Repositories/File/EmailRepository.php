@@ -27,17 +27,25 @@ class EmailRepository extends BaseFileCrudRepository implements EmailRepositoryI
     {
         $items = $this->getItems();
         $items[] = EntityHelper::toArray($emailEntity);
-        $count = count($items);
-        if($count > $this->limitItems) {
-            $items = array_slice($items,  $count - $this->limitItems, $this->limitItems);
-        }
         $this->setItems($items);
     }
 
     public function oneLast(): EmailEntity
     {
-        $items = $this->getItems();
-        $message = ArrayHelper::last($items);
-        return $this->getEntityManager()->createEntity($this->getEntityClass(), $message);
+        return $this->all()->last();
+    }
+
+    protected function setItems(array $items)
+    {
+        $items = $this->cleanByLimit($items);
+        return parent::setItems($items);
+    }
+
+    private function cleanByLimit(array $items) {
+        $count = count($items);
+        if($count > $this->limitItems) {
+            $items = array_slice($items,  $count - $this->limitItems, $this->limitItems);
+        }
+        return $items;
     }
 }
