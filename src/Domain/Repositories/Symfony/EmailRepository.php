@@ -2,18 +2,19 @@
 
 namespace ZnBundle\Notify\Domain\Repositories\Symfony;
 
+use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mailer\MailerInterface;
-use Symfony\Component\Messenger\MessageBusInterface;
+use Symfony\Component\Messenger\MessageBus;
+use Symfony\Component\Mime\Address;
 use Symfony\Component\Mime\Email;
 use ZnBundle\Notify\Domain\Entities\EmailEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 use ZnCore\Base\Helpers\ComposerHelper;
 use ZnCore\Domain\Base\Repositories\BaseRepository;
 use ZnCore\Domain\Interfaces\Libs\EntityManagerInterface;
-use Symfony\Component\Mime\Address;
 
-ComposerHelper::requireAssert(MailerInterface::class, 'symfony/mailer');
-ComposerHelper::requireAssert(MessageBusInterface::class, 'symfony/messenger');
+ComposerHelper::requireAssert(Mailer::class, 'symfony/mailer');
+ComposerHelper::requireAssert(MessageBus::class, 'symfony/messenger');
 
 class EmailRepository extends BaseRepository implements EmailRepositoryInterface
 {
