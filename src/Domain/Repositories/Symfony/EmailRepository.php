@@ -32,13 +32,13 @@ class EmailRepository extends BaseRepository implements EmailRepositoryInterface
         $email = (new Email())
             ->from(new Address($emailEntity->getFrom()))
             ->to(new Address($emailEntity->getTo()))
-            //->cc('cc@example.com')
-            //->bcc('bcc@example.com')
-            //->replyTo('fabien@example.com')
+            ->cc($emailEntity->getCc())
+            ->bcc($emailEntity->getBcc())
+            ->replyTo($emailEntity->getReplyTo())
             //->priority(Email::PRIORITY_HIGH)
             ->subject($emailEntity->getSubject())
-            ->text(strip_tags($emailEntity->getBody()))
-            ->html($emailEntity->getBody());
+            ->text($emailEntity->getBody())
+            ->html($emailEntity->getHtml());
         $this->mailer->send($email);
     }
 }
