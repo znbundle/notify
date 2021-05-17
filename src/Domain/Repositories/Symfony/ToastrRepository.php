@@ -1,40 +1,51 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Repositories\YiiSession;
+namespace ZnBundle\Notify\Domain\Repositories\Symfony;
 
 use Illuminate\Support\Collection;
-use Psr\Container\ContainerInterface;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Yii;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
-use ZnCore\Base\Libs\Container\ContainerAwareTrait;
 use ZnCore\Domain\Helpers\ValidationHelper;
 use ZnCore\Domain\Interfaces\Libs\EntityManagerInterface;
 use ZnCore\Domain\Traits\EntityManagerTrait;
-use Yii;
 
 class ToastrRepository implements ToastrRepositoryInterface
 {
 
-    //use ContainerAwareTrait;
     use EntityManagerTrait;
 
     private static $all = [];
+    private $session;
 
-    public function __construct(EntityManagerInterface $em)
+    public function __construct(EntityManagerInterface $em, SessionInterface $session)
     {
         $this->setEntityManager($em);
+        $this->session = $session;
     }
 
     public function create(ToastrEntity $toastrEntity)
     {
         ValidationHelper::validateEntity($toastrEntity);
         self::$all[] = $toastrEntity;
-        Yii::$app->session->setFlash('flash-alert', self::$all);
+        $this->sync();
     }
 
-    public function all(): Collection {
-        $items = Yii::$app->session->getFlash('flash-alert');
+    public function all(): Collection
+    {
+        $items = $this->session->get('flash-alert');
         return new Collection($items);
-//        return $this->getEntityManager()->createEntityCollection(ToastrEntity::class, $items);
+    }
+
+    public function clear()
+    {
+        self::$all[] = [];
+        $this->session->remove('flash-alert');
+    }
+
+    private function sync()
+    {
+        $this->session->set('flash-alert', self::$all);
     }
 }
