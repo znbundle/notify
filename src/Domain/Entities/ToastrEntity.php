@@ -7,6 +7,7 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
 use ZnCore\Base\Enums\StatusEnum;
 use ZnCore\Base\Helpers\EnumHelper;
+use ZnCore\Domain\Constraints\Enum;
 use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 
 class ToastrEntity implements ValidateEntityByMetadataInterface
@@ -19,8 +20,8 @@ class ToastrEntity implements ValidateEntityByMetadataInterface
     public static function loadValidatorMetadata(ClassMetadata $metadata)
     {
         $metadata->addPropertyConstraint('type', new Assert\NotBlank());
-        $metadata->addPropertyConstraint('type', new Assert\Choice([
-            'choices' => EnumHelper::getValues(FlashMessageTypeEnum::class)
+        $metadata->addPropertyConstraint('type', new Enum([
+            'class' => FlashMessageTypeEnum::class,
         ]));
         $metadata->addPropertyConstraint('content', new Assert\NotBlank());
         $metadata->addPropertyConstraint('delay', new Assert\NotBlank());
