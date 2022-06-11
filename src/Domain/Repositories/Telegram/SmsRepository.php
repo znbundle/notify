@@ -15,6 +15,6 @@ class SmsRepository implements SmsRepositoryInterface
             '# SMS' . PHP_EOL .
             'Phone: ' . $smsEntity->getPhone() . PHP_EOL .
             'Message: ' . $smsEntity->getMessage();
-        Bot::sendAsString($message);
+        Bot::sendMessage($message);
     }
 }

@@ -17,6 +17,6 @@ class EmailRepository implements EmailRepositoryInterface
             'To: ' . $emailEntity->getTo() . PHP_EOL .
             'Subject: ' . $emailEntity->getSubject() . PHP_EOL .
             'Body: ' . $emailEntity->getBody();
-        Bot::sendAsString($message);
+        Bot::sendMessage($message);
     }
 }
