@@ -12,7 +12,7 @@ use ZnBundle\Notify\Domain\Entities\EmailEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 use ZnCore\Base\Libs\Composer\Helpers\ComposerHelper;
 use ZnCore\Domain\Base\Repositories\BaseRepository;
-use ZnCore\Domain\Interfaces\Libs\EntityManagerInterface;
+use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
 
 ComposerHelper::requireAssert(Mailer::class, 'symfony/mailer');
 ComposerHelper::requireAssert(MessageBus::class, 'symfony/messenger');

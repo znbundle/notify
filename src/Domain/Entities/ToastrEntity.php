@@ -8,9 +8,9 @@ use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
 use ZnCore\Base\Enums\StatusEnum;
 use ZnCore\Base\Helpers\EnumHelper;
 use ZnCore\Domain\Constraints\Enum;
-use ZnCore\Base\Libs\Entity\Interfaces\ValidateEntityByMetadataInterface;
+use ZnCore\Base\Libs\Validation\Interfaces\ValidationByMetadataInterface;
 
-class ToastrEntity implements ValidateEntityByMetadataInterface
+class ToastrEntity implements ValidationByMetadataInterface
 {
 
     private $type;

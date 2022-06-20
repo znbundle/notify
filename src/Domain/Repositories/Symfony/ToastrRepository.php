@@ -7,14 +7,14 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Yii;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
-use ZnCore\Domain\Helpers\ValidationHelper;
-use ZnCore\Domain\Interfaces\Libs\EntityManagerInterface;
-use ZnCore\Domain\Traits\EntityManagerTrait;
+use ZnCore\Base\Libs\Validation\Helpers\ValidationHelper;
+use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
+use ZnCore\Base\Libs\EntityManager\Traits\EntityManagerAwareTrait;
 
 class ToastrRepository implements ToastrRepositoryInterface
 {
 
-    use EntityManagerTrait;
+    use EntityManagerAwareTrait;
 
     private static $all = [];
     private $session;

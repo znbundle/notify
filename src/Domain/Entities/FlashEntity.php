@@ -4,9 +4,9 @@ namespace ZnBundle\Notify\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Base\Libs\Entity\Interfaces\ValidateEntityByMetadataInterface;
+use ZnCore\Base\Libs\Validation\Interfaces\ValidationByMetadataInterface;
 
-class FlashEntity implements ValidateEntityByMetadataInterface
+class FlashEntity implements ValidationByMetadataInterface
 {
 
     private $type = null;

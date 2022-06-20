@@ -4,7 +4,7 @@ namespace ZnBundle\Notify\Domain\Interfaces\Repositories;
 
 use Illuminate\Support\Collection;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
-use ZnCore\Domain\Exceptions\UnprocessibleEntityException;
+use ZnCore\Base\Libs\Validation\Exceptions\UnprocessibleEntityException;
 
 interface ToastrRepositoryInterface
 {
