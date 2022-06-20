@@ -11,7 +11,7 @@ use Symfony\Component\Mime\Email;
 use ZnBundle\Notify\Domain\Entities\EmailEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 use ZnCore\Base\Libs\Composer\Helpers\ComposerHelper;
-use ZnCore\Domain\Base\Repositories\BaseRepository;
+use ZnCore\Base\Libs\Repository\Base\BaseRepository;
 use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
 
 ComposerHelper::requireAssert(Mailer::class, 'symfony/mailer');

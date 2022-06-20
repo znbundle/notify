@@ -4,7 +4,7 @@ namespace ZnBundle\Notify\Domain\Repositories\Null;
 
 use ZnBundle\Notify\Domain\Entities\EmailEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use ZnCore\Domain\Base\Repositories\BaseRepository;
+use ZnCore\Base\Libs\Repository\Base\BaseRepository;
 use ZnCore\Domain\Interfaces\GetEntityClassInterface;
 
 class EmailRepository extends BaseRepository implements EmailRepositoryInterface, GetEntityClassInterface
