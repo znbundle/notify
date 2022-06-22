@@ -8,8 +8,8 @@ use ZnBundle\Notify\Domain\Entities\ToastrEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
 use ZnCore\Base\Libs\Container\Traits\ContainerAwareTrait;
 use ZnCore\Base\Libs\Validation\Helpers\ValidationHelper;
-use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Base\Libs\EntityManager\Traits\EntityManagerAwareTrait;
+use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnCore\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 use Yii;
 
 class ToastrRepository implements ToastrRepositoryInterface

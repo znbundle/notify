@@ -3,7 +3,7 @@
 namespace ZnBundle\Notify\Domain\Repositories\File;
 
 use ZnCore\Base\Libs\Store\Base\BaseFileCrudRepository;
-use ZnCore\Base\Libs\Entity\Helpers\EntityHelper;
+use ZnCore\Domain\Entity\Helpers\EntityHelper;
 
 abstract class BaseRepository extends BaseFileCrudRepository
 {
