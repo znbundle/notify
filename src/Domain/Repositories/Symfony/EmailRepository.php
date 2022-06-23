@@ -10,7 +10,7 @@ use Symfony\Component\Mime\Address;
 use Symfony\Component\Mime\Email;
 use ZnBundle\Notify\Domain\Entities\EmailEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use ZnCore\Base\Libs\Composer\Helpers\ComposerHelper;
+use ZnCore\Base\Composer\Helpers\ComposerHelper;
 use ZnCore\Domain\Repository\Base\BaseRepository;
 use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
 

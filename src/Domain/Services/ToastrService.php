@@ -6,7 +6,7 @@ use Illuminate\Support\Collection;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use ZnCore\Base\Libs\I18Next\Facades\I18Next;
+use ZnCore\Base\I18Next\Facades\I18Next;
 use ZnCore\Domain\Service\Base\BaseService;
 use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;

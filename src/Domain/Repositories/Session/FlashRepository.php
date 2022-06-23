@@ -6,7 +6,7 @@ use LogicException;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use ZnCore\Base\Libs\Container\Traits\ContainerAwareTrait;
+use ZnCore\Base\Container\Traits\ContainerAwareTrait;
 
 class FlashRepository implements FlashRepositoryInterface
 {
