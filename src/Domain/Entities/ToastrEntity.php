@@ -5,7 +5,7 @@ namespace ZnBundle\Notify\Domain\Entities;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
-use ZnCore\Base\Enums\StatusEnum;
+use ZnCore\Base\Libs\Status\Enums\StatusEnum;
 use ZnCore\Base\Libs\Enum\Helpers\EnumHelper;
 use ZnCore\Base\Libs\Enum\Constraints\Enum;
 use ZnCore\Base\Libs\Validation\Interfaces\ValidationByMetadataInterface;
