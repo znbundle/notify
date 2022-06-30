@@ -21,5 +21,5 @@ interface ToastrServiceInterface
     /**
      * @return Collection | ToastrEntity[]
      */
-    public function all(): Collection;
+    public function findAll(): Collection;
 }

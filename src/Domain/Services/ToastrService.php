@@ -62,7 +62,7 @@ class ToastrService extends BaseService implements ToastrServiceInterface
         $this->getRepository()->clear();
     }
     
-    public function all(): Collection {
-        return $this->getRepository()->all();
+    public function findAll(): Collection {
+        return $this->getRepository()->findAll();
     }
 }

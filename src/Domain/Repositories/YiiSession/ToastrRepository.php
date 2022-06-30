@@ -32,7 +32,7 @@ class ToastrRepository implements ToastrRepositoryInterface
         Yii::$app->session->setFlash('flash-alert', self::$all);
     }
 
-    public function all(): Collection {
+    public function findAll(): Collection {
         $items = Yii::$app->session->getFlash('flash-alert');
         return new Collection($items);
 //        return $this->getEntityManager()->createEntityCollection(ToastrEntity::class, $items);

@@ -32,7 +32,7 @@ class ToastrRepository implements ToastrRepositoryInterface
         $this->sync();
     }
 
-    public function all(): Collection
+    public function findAll(): Collection
     {
         $items = $this->session->get('flash-alert');
         return new Collection($items);
