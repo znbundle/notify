@@ -12,7 +12,7 @@ abstract class BaseRepository extends BaseFileCrudRepository
 
     public function oneLast(): object
     {
-        return $this->all()->last();
+        return $this->findAll()->last();
     }
 
     protected function insert(object $entity) {
