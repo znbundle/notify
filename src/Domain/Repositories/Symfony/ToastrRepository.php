@@ -34,7 +34,7 @@ class ToastrRepository implements ToastrRepositoryInterface
 
     public function findAll(): Collection
     {
-        $items = $this->session->get('flash-alert');
+        $items = $this->session->get('flash-alert', []);
         return new Collection($items);
     }
 
