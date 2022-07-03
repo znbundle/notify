@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Notify\Domain\Interfaces\Repositories;
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
 use ZnCore\Base\Validation\Exceptions\UnprocessibleEntityException;
 

@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Notify\Domain\Repositories\Symfony;
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Yii;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;

@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Notify\Domain\Services;
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
