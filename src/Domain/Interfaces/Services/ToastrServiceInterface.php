@@ -19,7 +19,7 @@ interface ToastrServiceInterface
     public function add(string $type, $message, int $delay = null);
 
     /**
-     * @return Collection | ToastrEntity[]
+     * @return \ZnCore\Domain\Collection\Interfaces\Enumerable | ToastrEntity[]
      */
     public function findAll(): Collection;
 }

@@ -17,7 +17,7 @@ interface ToastrRepositoryInterface
     public function create(ToastrEntity $toastrEntity);
 
     /**
-     * @return Collection | ToastrEntity[]
+     * @return \ZnCore\Domain\Collection\Interfaces\Enumerable | ToastrEntity[]
      */
     public function findAll(): Collection;
 }
