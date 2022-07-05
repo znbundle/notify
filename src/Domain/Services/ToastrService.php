@@ -2,6 +2,7 @@
 
 namespace ZnBundle\Notify\Domain\Services;
 
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
@@ -62,7 +63,7 @@ class ToastrService extends BaseService implements ToastrServiceInterface
         $this->getRepository()->clear();
     }
     
-    public function findAll(): Collection {
+    public function findAll(): Enumerable {
         return $this->getRepository()->findAll();
     }
 }

@@ -2,6 +2,7 @@
 
 namespace ZnBundle\Notify\Domain\Repositories\YiiSession;
 
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
 use Psr\Container\ContainerInterface;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
@@ -32,7 +33,7 @@ class ToastrRepository implements ToastrRepositoryInterface
         Yii::$app->session->setFlash('flash-alert', self::$all);
     }
 
-    public function findAll(): Collection {
+    public function findAll(): Enumerable {
         $items = Yii::$app->session->getFlash('flash-alert');
         return new Collection($items);
 //        return $this->getEntityManager()->createEntityCollection(ToastrEntity::class, $items);

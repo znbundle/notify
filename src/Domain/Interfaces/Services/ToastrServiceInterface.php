@@ -2,6 +2,7 @@
 
 namespace ZnBundle\Notify\Domain\Interfaces\Services;
 
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
 
@@ -19,7 +20,7 @@ interface ToastrServiceInterface
     public function add(string $type, $message, int $delay = null);
 
     /**
-     * @return \ZnCore\Domain\Collection\Interfaces\Enumerable | ToastrEntity[]
+     * @return Enumerable | ToastrEntity[]
      */
-    public function findAll(): Collection;
+    public function findAll(): Enumerable;
 }

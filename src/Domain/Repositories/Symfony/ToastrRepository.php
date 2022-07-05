@@ -2,6 +2,7 @@
 
 namespace ZnBundle\Notify\Domain\Repositories\Symfony;
 
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Yii;
@@ -32,7 +33,7 @@ class ToastrRepository implements ToastrRepositoryInterface
         $this->sync();
     }
 
-    public function findAll(): Collection
+    public function findAll(): Enumerable
     {
         $items = $this->session->get('flash-alert', []);
         return new Collection($items);
