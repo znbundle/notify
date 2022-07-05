@@ -2,16 +2,13 @@
 
 namespace ZnBundle\Notify\Domain\Services;
 
-use ZnCore\Domain\Collection\Interfaces\Enumerable;
-use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
+use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use ZnLib\Components\I18Next\Facades\I18Next;
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Service\Base\BaseService;
-use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;
-use ZnBundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;
+use ZnLib\Components\I18Next\Facades\I18Next;
 
 class ToastrService extends BaseService implements ToastrServiceInterface
 {
@@ -45,7 +42,7 @@ class ToastrService extends BaseService implements ToastrServiceInterface
 
     public function add(string $type, $message, int $delay = null)
     {
-        if($delay == null) {
+        if ($delay == null) {
             $delay = self::DEFAULT_DELAY;
         }
         if (is_array($message)) {
@@ -62,8 +59,9 @@ class ToastrService extends BaseService implements ToastrServiceInterface
     {
         $this->getRepository()->clear();
     }
-    
-    public function findAll(): Enumerable {
+
+    public function findAll(): Enumerable
+    {
         return $this->getRepository()->findAll();
     }
 }

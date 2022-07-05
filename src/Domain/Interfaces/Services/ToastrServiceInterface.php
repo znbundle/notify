@@ -2,9 +2,8 @@
 
 namespace ZnBundle\Notify\Domain\Interfaces\Services;
 
-use ZnCore\Domain\Collection\Interfaces\Enumerable;
-use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 
 interface ToastrServiceInterface
 {
