@@ -8,7 +8,7 @@ use ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnCore\Collection\Interfaces\Enumerable;
 use ZnCore\Service\Base\BaseService;
-use ZnLib\Components\I18Next\Facades\I18Next;
+use ZnLib\I18Next\Facades\I18Next;
 
 class ToastrService extends BaseService implements ToastrServiceInterface
 {
