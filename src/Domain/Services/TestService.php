@@ -4,7 +4,7 @@ namespace ZnBundle\Notify\Domain\Services;
 
 use ZnBundle\Notify\Domain\Interfaces\Services\TestServiceInterface;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\TestRepositoryInterface;
-use ZnCore\Domain\Service\Base\BaseCrudService;
+use ZnCore\Service\Base\BaseCrudService;
 
 class TestService extends BaseCrudService implements TestServiceInterface
 {

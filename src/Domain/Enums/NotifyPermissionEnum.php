@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Notify\Domain\Enums;
 
-use ZnCore\Base\Enum\Interfaces\GetLabelsInterface;
+use ZnCore\Enum\Interfaces\GetLabelsInterface;
 
 class NotifyPermissionEnum implements GetLabelsInterface
 {

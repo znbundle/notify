@@ -4,7 +4,7 @@ use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mailer\Transport\NullTransport;
 use Symfony\Component\Mailer\Transport\TransportInterface;
-use ZnCore\Base\Env\Helpers\EnvHelper;
+use ZnCore\Env\Helpers\EnvHelper;
 
 return [
     'singletons' => [
