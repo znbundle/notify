@@ -4,7 +4,7 @@ namespace ZnBundle\Notify\Test\Helpers;
 
 use ZnBundle\Notify\Domain\Entities\EmailEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use ZnCore\Base\Container\Helpers\ContainerHelper;
+use ZnCore\Container\Helpers\ContainerHelper;
 
 class EmailHelper
 {

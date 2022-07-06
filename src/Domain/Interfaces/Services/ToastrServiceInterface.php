@@ -3,7 +3,7 @@
 namespace ZnBundle\Notify\Domain\Interfaces\Services;
 
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
-use ZnCore\Domain\Collection\Interfaces\Enumerable;
+use ZnCore\Collection\Interfaces\Enumerable;
 
 interface ToastrServiceInterface
 {

@@ -10,7 +10,7 @@ use ZnBundle\Notify\Domain\Interfaces\Services\EmailServiceInterface;
 use ZnBundle\Notify\Domain\Jobs\SendEmailJob;
 use ZnBundle\Queue\Domain\Enums\PriorityEnum;
 use ZnBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
-use ZnCore\Base\DotEnv\Domain\Libs\DotEnv;
+use ZnCore\DotEnv\Domain\Libs\DotEnv;
 
 class EmailService implements EmailServiceInterface
 {
