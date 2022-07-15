@@ -3,7 +3,7 @@
 namespace ZnBundle\Notify\Domain\Interfaces\Repositories;
 
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
-use ZnCore\Validation\Exceptions\UnprocessibleEntityException;
+use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
 use ZnCore\Collection\Interfaces\Enumerable;
 
 interface ToastrRepositoryInterface

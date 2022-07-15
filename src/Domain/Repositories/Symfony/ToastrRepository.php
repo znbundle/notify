@@ -6,7 +6,7 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Yii;
 use ZnBundle\Notify\Domain\Entities\ToastrEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
-use ZnCore\Validation\Helpers\ValidationHelper;
+use ZnDomain\Validator\Helpers\ValidationHelper;
 use ZnCore\Collection\Interfaces\Enumerable;
 use ZnCore\Collection\Libs\Collection;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
